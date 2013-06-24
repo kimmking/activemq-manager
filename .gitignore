@@ -1,0 +1,17 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.project
+.classpath
+
+target/
+.settings
+*/src/main/java/META-INF/
+*.log
+*.swp
+*.diff
+*.patch
