@@ -1,4 +1,9 @@
-activemq-manager
-================
+ActiveMQ Manager project
+=========
 
-activemq-manager
+### Introduce  
+  This project for creating a nice ActiveMQ Cluster Manager Console.
+  
+### Architecture
+    add comment
+
