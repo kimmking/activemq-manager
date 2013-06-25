@@ -1,5 +1,8 @@
 package org.kimmking.am.agent;
 
+import org.kimmking.am.agent.command.Command;
+import org.kimmking.am.agent.command.CommandUtils;
+
 
 /**
  * @author kimmking.cn@gmail.com
@@ -7,11 +10,13 @@ package org.kimmking.am.agent;
 public class Agent implements AgentMBean{
 
 	@Override
-	public String hello(String test) {
-		
-		return "Hello,"+test;
+	public String command(Command cmd) {
+		return cmd.execute();
 	}
 
-	
+	@Override
+	public String execute(String cmd) {
+		return CommandUtils.exec(cmd);
+	}
 
 }
