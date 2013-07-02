@@ -5,7 +5,7 @@ if [ -z "$WORK_PATH" ]; then
 	WORK_PATH=`pwd`/mq
 fi
 if [ -z "$WORK_VERSION" ]; then
-	WORK_VERSION="5.7.0"
+	WORK_VERSION="5.8.0"
 fi
 
 if [ ! -d "$WORK_PATH" ]; then  

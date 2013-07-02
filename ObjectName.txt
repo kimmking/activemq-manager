@@ -1,0 +1,505 @@
+Domains:---------------
+	Domain[0] = JMImplementation
+	Domain[1] = com.sun.management
+	Domain[2] = java.lang
+	Domain[3] = org.apache.activemq
+	Domain[4] = java.util.logging
+all ObjectName£º---------------
+ ObjectName => java.lang:type=OperatingSystem
+Class: com.sun.management.OperatingSystem
+	 ==> Attriber£ºCommittedVirtualMemorySize
+	 ==> Attriber£ºFreePhysicalMemorySize
+	 ==> Attriber£ºFreeSwapSpaceSize
+	 ==> Attriber£ºProcessCpuTime
+	 ==> Attriber£ºTotalPhysicalMemorySize
+	 ==> Attriber£ºTotalSwapSpaceSize
+	 ==> Attriber£ºName
+	 ==> Attriber£ºAvailableProcessors
+	 ==> Attriber£ºArch
+	 ==> Attriber£ºSystemLoadAverage
+	 ==> Attriber£ºVersion
+ ObjectName => java.util.logging:type=Logging
+Class: java.util.logging.Logging
+	 ==> Attriber£ºLoggerNames
+	 ==> Operation£ºgetLoggerLevel
+	 ==> Operation£ºgetParentLoggerName
+	 ==> Operation£ºsetLoggerLevel
+ ObjectName => java.lang:type=Compilation
+Class: sun.management.CompilationImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºCompilationTimeMonitoringSupported
+	 ==> Attriber£ºTotalCompilationTime
+ ObjectName => java.lang:type=MemoryPool,name=Tenured Gen
+Class: sun.management.MemoryPoolImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºType
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºCollectionUsage
+	 ==> Attriber£ºCollectionUsageThreshold
+	 ==> Attriber£ºCollectionUsageThresholdCount
+	 ==> Attriber£ºMemoryManagerNames
+	 ==> Attriber£ºPeakUsage
+	 ==> Attriber£ºUsage
+	 ==> Attriber£ºUsageThreshold
+	 ==> Attriber£ºUsageThresholdCount
+	 ==> Attriber£ºCollectionUsageThresholdExceeded
+	 ==> Attriber£ºCollectionUsageThresholdSupported
+	 ==> Attriber£ºUsageThresholdExceeded
+	 ==> Attriber£ºUsageThresholdSupported
+	 ==> Operation£ºresetPeakUsage
+ ObjectName => java.lang:type=MemoryPool,name=Perm Gen
+Class: sun.management.MemoryPoolImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºType
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºCollectionUsage
+	 ==> Attriber£ºCollectionUsageThreshold
+	 ==> Attriber£ºCollectionUsageThresholdCount
+	 ==> Attriber£ºMemoryManagerNames
+	 ==> Attriber£ºPeakUsage
+	 ==> Attriber£ºUsage
+	 ==> Attriber£ºUsageThreshold
+	 ==> Attriber£ºUsageThresholdCount
+	 ==> Attriber£ºCollectionUsageThresholdExceeded
+	 ==> Attriber£ºCollectionUsageThresholdSupported
+	 ==> Attriber£ºUsageThresholdExceeded
+	 ==> Attriber£ºUsageThresholdSupported
+	 ==> Operation£ºresetPeakUsage
+ ObjectName => java.lang:type=Memory
+Class: sun.management.MemoryImpl
+	 ==> Attriber£ºVerbose
+	 ==> Attriber£ºHeapMemoryUsage
+	 ==> Attriber£ºNonHeapMemoryUsage
+	 ==> Attriber£ºObjectPendingFinalizationCount
+	 ==> Operation£ºgc
+ ObjectName => JMImplementation:type=MBeanServerDelegate
+Class: javax.management.MBeanServerDelegate
+	 ==> Attriber£ºMBeanServerId
+	 ==> Attriber£ºSpecificationName
+	 ==> Attriber£ºSpecificationVersion
+	 ==> Attriber£ºSpecificationVendor
+	 ==> Attriber£ºImplementationName
+	 ==> Attriber£ºImplementationVersion
+	 ==> Attriber£ºImplementationVendor
+ ObjectName => java.lang:type=MemoryPool,name=Survivor Space
+Class: sun.management.MemoryPoolImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºType
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºCollectionUsage
+	 ==> Attriber£ºCollectionUsageThreshold
+	 ==> Attriber£ºCollectionUsageThresholdCount
+	 ==> Attriber£ºMemoryManagerNames
+	 ==> Attriber£ºPeakUsage
+	 ==> Attriber£ºUsage
+	 ==> Attriber£ºUsageThreshold
+	 ==> Attriber£ºUsageThresholdCount
+	 ==> Attriber£ºCollectionUsageThresholdExceeded
+	 ==> Attriber£ºCollectionUsageThresholdSupported
+	 ==> Attriber£ºUsageThresholdExceeded
+	 ==> Attriber£ºUsageThresholdSupported
+	 ==> Operation£ºresetPeakUsage
+ ObjectName => java.lang:type=Runtime
+Class: sun.management.RuntimeImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºClassPath
+	 ==> Attriber£ºBootClassPath
+	 ==> Attriber£ºLibraryPath
+	 ==> Attriber£ºVmName
+	 ==> Attriber£ºVmVendor
+	 ==> Attriber£ºVmVersion
+	 ==> Attriber£ºBootClassPathSupported
+	 ==> Attriber£ºInputArguments
+	 ==> Attriber£ºManagementSpecVersion
+	 ==> Attriber£ºSpecName
+	 ==> Attriber£ºSpecVendor
+	 ==> Attriber£ºSpecVersion
+	 ==> Attriber£ºStartTime
+	 ==> Attriber£ºSystemProperties
+	 ==> Attriber£ºUptime
+ ObjectName => java.lang:type=GarbageCollector,name=Copy
+Class: sun.management.GarbageCollectorImpl
+	 ==> Attriber£ºLastGcInfo
+	 ==> Attriber£ºCollectionCount
+	 ==> Attriber£ºCollectionTime
+	 ==> Attriber£ºName
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºMemoryPoolNames
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Subscription,persistentMode=Durable,subscriptionID=kk-dp-dc,destinationType=Topic,destinationName=kk.dp,clientId=kk-dp
+Class: org.apache.activemq.broker.jmx.InactiveDurableSubscriptionView
+	 ==> Attriber£ºSubscriptionName
+	 ==> Attriber£ºCursorMemoryUsage
+	 ==> Attriber£ºCursorPercentUsage
+	 ==> Attriber£ºCursorFull
+	 ==> Attriber£ºPriority
+	 ==> Attriber£ºActive
+	 ==> Attriber£ºConnectionId
+	 ==> Attriber£ºConnection
+	 ==> Attriber£ºUserName
+	 ==> Attriber£ºSelector
+	 ==> Attriber£ºPrefetchSize
+	 ==> Attriber£ºClientId
+	 ==> Attriber£ºDurable
+	 ==> Attriber£ºDestinationName
+	 ==> Attriber£ºMaximumPendingMessageLimit
+	 ==> Attriber£ºRetroactive
+	 ==> Attriber£ºSlowConsumer
+	 ==> Attriber£ºPendingQueueSize
+	 ==> Attriber£ºDispatchedQueueSize
+	 ==> Attriber£ºDispatchedCounter
+	 ==> Attriber£ºEnqueueCounter
+	 ==> Attriber£ºDequeueCounter
+	 ==> Attriber£ºExclusive
+	 ==> Attriber£ºNoLocal
+	 ==> Attriber£ºSessionId
+	 ==> Attriber£ºSubcriptionName
+	 ==> Attriber£ºSubcriptionId
+	 ==> Attriber£ºDestinationQueue
+	 ==> Attriber£ºDestinationTopic
+	 ==> Attriber£ºDestinationTemporary
+	 ==> Attriber£ºMessageCountAwaitingAcknowledge
+	 ==> Operation£ºdestroy
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºcursorSize
+	 ==> Operation£ºdoesCursorHaveMessagesBuffered
+	 ==> Operation£ºdoesCursorHaveSpace
+	 ==> Operation£ºisMatchingQueue
+	 ==> Operation£ºisMatchingTopic
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Queue,Destination=kk.qq
+Class: org.apache.activemq.broker.jmx.QueueView
+	 ==> Attriber£ºCacheEnabled
+	 ==> Attriber£ºCursorMemoryUsage
+	 ==> Attriber£ºCursorPercentUsage
+	 ==> Attriber£ºCursorFull
+	 ==> Attriber£ºName
+	 ==> Attriber£ºSlowConsumerStrategy
+	 ==> Attriber£ºMemoryPercentUsage
+	 ==> Attriber£ºMemoryLimit
+	 ==> Attriber£ºProducerFlowControl
+	 ==> Attriber£ºAlwaysRetroactive
+	 ==> Attriber£ºBlockedProducerWarningInterval
+	 ==> Attriber£ºMaxProducersToAudit
+	 ==> Attriber£ºMaxAuditDepth
+	 ==> Attriber£ºMaxPageSize
+	 ==> Attriber£ºUseCache
+	 ==> Attriber£ºPrioritizedMessages
+	 ==> Attriber£ºProducerCount
+	 ==> Attriber£ºConsumerCount
+	 ==> Attriber£ºEnqueueCount
+	 ==> Attriber£ºDequeueCount
+	 ==> Attriber£ºDispatchCount
+	 ==> Attriber£ºInFlightCount
+	 ==> Attriber£ºExpiredCount
+	 ==> Attriber£ºQueueSize
+	 ==> Attriber£ºAverageEnqueueTime
+	 ==> Attriber£ºMaxEnqueueTime
+	 ==> Attriber£ºMinEnqueueTime
+	 ==> Attriber£ºMemoryUsagePortion
+	 ==> Attriber£ºSubscriptions
+	 ==> Operation£ºgetMessage
+	 ==> Operation£ºpurge
+	 ==> Operation£ºremoveMessage
+	 ==> Operation£ºremoveMatchingMessages
+	 ==> Operation£ºremoveMatchingMessages
+	 ==> Operation£ºcopyMessageTo
+	 ==> Operation£ºcopyMatchingMessagesTo
+	 ==> Operation£ºcopyMatchingMessagesTo
+	 ==> Operation£ºmoveMessageTo
+	 ==> Operation£ºmoveMatchingMessagesTo
+	 ==> Operation£ºmoveMatchingMessagesTo
+	 ==> Operation£ºretryMessage
+	 ==> Operation£ºcursorSize
+	 ==> Operation£ºdoesCursorHaveMessagesBuffered
+	 ==> Operation£ºdoesCursorHaveSpace
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+ ObjectName => java.lang:type=MemoryPool,name=Eden Space
+Class: sun.management.MemoryPoolImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºType
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºCollectionUsage
+	 ==> Attriber£ºCollectionUsageThreshold
+	 ==> Attriber£ºCollectionUsageThresholdCount
+	 ==> Attriber£ºMemoryManagerNames
+	 ==> Attriber£ºPeakUsage
+	 ==> Attriber£ºUsage
+	 ==> Attriber£ºUsageThreshold
+	 ==> Attriber£ºUsageThresholdCount
+	 ==> Attriber£ºCollectionUsageThresholdExceeded
+	 ==> Attriber£ºCollectionUsageThresholdSupported
+	 ==> Attriber£ºUsageThresholdExceeded
+	 ==> Attriber£ºUsageThresholdSupported
+	 ==> Operation£ºresetPeakUsage
+ ObjectName => java.lang:type=GarbageCollector,name=MarkSweepCompact
+Class: sun.management.GarbageCollectorImpl
+	 ==> Attriber£ºLastGcInfo
+	 ==> Attriber£ºCollectionCount
+	 ==> Attriber£ºCollectionTime
+	 ==> Attriber£ºName
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºMemoryPoolNames
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Broker
+Class: org.apache.activemq.broker.jmx.BrokerView
+	 ==> Attriber£ºUptime
+	 ==> Attriber£ºBrokerVersion
+	 ==> Attriber£ºSlave
+	 ==> Attriber£ºBrokerName
+	 ==> Attriber£ºPersistent
+	 ==> Attriber£ºTransportConnectors
+	 ==> Attriber£ºBrokerId
+	 ==> Attriber£ºTopics
+	 ==> Attriber£ºQueues
+	 ==> Attriber£ºTemporaryTopics
+	 ==> Attriber£ºTemporaryQueues
+	 ==> Attriber£ºTopicSubscribers
+	 ==> Attriber£ºDurableTopicSubscribers
+	 ==> Attriber£ºQueueSubscribers
+	 ==> Attriber£ºTemporaryTopicSubscribers
+	 ==> Attriber£ºTemporaryQueueSubscribers
+	 ==> Attriber£ºInactiveDurableTopicSubscribers
+	 ==> Attriber£ºTopicProducers
+	 ==> Attriber£ºQueueProducers
+	 ==> Attriber£ºTemporaryTopicProducers
+	 ==> Attriber£ºTemporaryQueueProducers
+	 ==> Attriber£ºDynamicDestinationProducers
+	 ==> Attriber£ºTotalEnqueueCount
+	 ==> Attriber£ºTotalDequeueCount
+	 ==> Attriber£ºTotalConsumerCount
+	 ==> Attriber£ºTotalProducerCount
+	 ==> Attriber£ºTotalMessageCount
+	 ==> Attriber£ºMemoryPercentUsage
+	 ==> Attriber£ºMemoryLimit
+	 ==> Attriber£ºStoreLimit
+	 ==> Attriber£ºStorePercentUsage
+	 ==> Attriber£ºTempLimit
+	 ==> Attriber£ºTempPercentUsage
+	 ==> Attriber£ºStatisticsEnabled
+	 ==> Attriber£ºOpenWireURL
+	 ==> Attriber£ºStompURL
+	 ==> Attriber£ºSslURL
+	 ==> Attriber£ºStompSslURL
+	 ==> Attriber£ºVMURL
+	 ==> Attriber£ºDataDirectory
+	 ==> Attriber£ºJMSJobScheduler
+	 ==> Operation£ºgc
+	 ==> Operation£ºstop
+	 ==> Operation£ºenableStatistics
+	 ==> Operation£ºaddConnector
+	 ==> Operation£ºremoveConnector
+	 ==> Operation£ºaddNetworkConnector
+	 ==> Operation£ºremoveNetworkConnector
+	 ==> Operation£ºstopGracefully
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºdisableStatistics
+	 ==> Operation£ºterminateJVM
+	 ==> Operation£ºaddTopic
+	 ==> Operation£ºaddQueue
+	 ==> Operation£ºremoveTopic
+	 ==> Operation£ºremoveQueue
+	 ==> Operation£ºcreateDurableSubscriber
+	 ==> Operation£ºdestroyDurableSubscriber
+	 ==> Operation£ºreloadLog4jProperties
+	 ==> Operation£ºgetTransportConnectorByType
+	 ==> Operation£ºstart
+ ObjectName => java.lang:type=Threading
+Class: sun.management.ThreadImpl
+	 ==> Attriber£ºThreadAllocatedMemoryEnabled
+	 ==> Attriber£ºThreadAllocatedMemorySupported
+	 ==> Attriber£ºThreadContentionMonitoringEnabled
+	 ==> Attriber£ºDaemonThreadCount
+	 ==> Attriber£ºPeakThreadCount
+	 ==> Attriber£ºCurrentThreadCpuTimeSupported
+	 ==> Attriber£ºObjectMonitorUsageSupported
+	 ==> Attriber£ºSynchronizerUsageSupported
+	 ==> Attriber£ºThreadContentionMonitoringSupported
+	 ==> Attriber£ºThreadCpuTimeEnabled
+	 ==> Attriber£ºAllThreadIds
+	 ==> Attriber£ºCurrentThreadCpuTime
+	 ==> Attriber£ºCurrentThreadUserTime
+	 ==> Attriber£ºThreadCount
+	 ==> Attriber£ºTotalStartedThreadCount
+	 ==> Attriber£ºThreadCpuTimeSupported
+	 ==> Operation£ºgetThreadAllocatedBytes
+	 ==> Operation£ºgetThreadAllocatedBytes
+	 ==> Operation£ºgetThreadCpuTime
+	 ==> Operation£ºgetThreadCpuTime
+	 ==> Operation£ºgetThreadUserTime
+	 ==> Operation£ºgetThreadUserTime
+	 ==> Operation£ºdumpAllThreads
+	 ==> Operation£ºfindDeadlockedThreads
+	 ==> Operation£ºfindMonitorDeadlockedThreads
+	 ==> Operation£ºgetThreadInfo
+	 ==> Operation£ºgetThreadInfo
+	 ==> Operation£ºgetThreadInfo
+	 ==> Operation£ºgetThreadInfo
+	 ==> Operation£ºgetThreadInfo
+	 ==> Operation£ºresetPeakThreadCount
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Topic,Destination=kk.dp
+Class: org.apache.activemq.broker.jmx.TopicView
+	 ==> Attriber£ºName
+	 ==> Attriber£ºSlowConsumerStrategy
+	 ==> Attriber£ºMemoryPercentUsage
+	 ==> Attriber£ºMemoryLimit
+	 ==> Attriber£ºProducerFlowControl
+	 ==> Attriber£ºAlwaysRetroactive
+	 ==> Attriber£ºBlockedProducerWarningInterval
+	 ==> Attriber£ºMaxProducersToAudit
+	 ==> Attriber£ºMaxAuditDepth
+	 ==> Attriber£ºMaxPageSize
+	 ==> Attriber£ºUseCache
+	 ==> Attriber£ºPrioritizedMessages
+	 ==> Attriber£ºProducerCount
+	 ==> Attriber£ºConsumerCount
+	 ==> Attriber£ºEnqueueCount
+	 ==> Attriber£ºDequeueCount
+	 ==> Attriber£ºDispatchCount
+	 ==> Attriber£ºInFlightCount
+	 ==> Attriber£ºExpiredCount
+	 ==> Attriber£ºQueueSize
+	 ==> Attriber£ºAverageEnqueueTime
+	 ==> Attriber£ºMaxEnqueueTime
+	 ==> Attriber£ºMinEnqueueTime
+	 ==> Attriber£ºMemoryUsagePortion
+	 ==> Attriber£ºSubscriptions
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+ ObjectName => com.sun.management:type=HotSpotDiagnostic
+Class: sun.management.HotSpotDiagnostic
+	 ==> Attriber£ºDiagnosticOptions
+	 ==> Operation£ºdumpHeap
+	 ==> Operation£ºgetVMOption
+	 ==> Operation£ºsetVMOption
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Topic,Destination=ActiveMQ.Advisory.Topic
+Class: org.apache.activemq.broker.jmx.TopicView
+	 ==> Attriber£ºName
+	 ==> Attriber£ºSlowConsumerStrategy
+	 ==> Attriber£ºMemoryPercentUsage
+	 ==> Attriber£ºMemoryLimit
+	 ==> Attriber£ºProducerFlowControl
+	 ==> Attriber£ºAlwaysRetroactive
+	 ==> Attriber£ºBlockedProducerWarningInterval
+	 ==> Attriber£ºMaxProducersToAudit
+	 ==> Attriber£ºMaxAuditDepth
+	 ==> Attriber£ºMaxPageSize
+	 ==> Attriber£ºUseCache
+	 ==> Attriber£ºPrioritizedMessages
+	 ==> Attriber£ºProducerCount
+	 ==> Attriber£ºConsumerCount
+	 ==> Attriber£ºEnqueueCount
+	 ==> Attriber£ºDequeueCount
+	 ==> Attriber£ºDispatchCount
+	 ==> Attriber£ºInFlightCount
+	 ==> Attriber£ºExpiredCount
+	 ==> Attriber£ºQueueSize
+	 ==> Attriber£ºAverageEnqueueTime
+	 ==> Attriber£ºMaxEnqueueTime
+	 ==> Attriber£ºMinEnqueueTime
+	 ==> Attriber£ºMemoryUsagePortion
+	 ==> Attriber£ºSubscriptions
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+ ObjectName => java.lang:type=ClassLoading
+Class: sun.management.ClassLoadingImpl
+	 ==> Attriber£ºLoadedClassCount
+	 ==> Attriber£ºUnloadedClassCount
+	 ==> Attriber£ºTotalLoadedClassCount
+	 ==> Attriber£ºVerbose
+ ObjectName => java.lang:type=MemoryManager,name=CodeCacheManager
+Class: sun.management.MemoryManagerImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºMemoryPoolNames
+ ObjectName => java.lang:type=MemoryPool,name=Code Cache
+Class: sun.management.MemoryPoolImpl
+	 ==> Attriber£ºName
+	 ==> Attriber£ºType
+	 ==> Attriber£ºValid
+	 ==> Attriber£ºCollectionUsage
+	 ==> Attriber£ºCollectionUsageThreshold
+	 ==> Attriber£ºCollectionUsageThresholdCount
+	 ==> Attriber£ºMemoryManagerNames
+	 ==> Attriber£ºPeakUsage
+	 ==> Attriber£ºUsage
+	 ==> Attriber£ºUsageThreshold
+	 ==> Attriber£ºUsageThresholdCount
+	 ==> Attriber£ºCollectionUsageThresholdExceeded
+	 ==> Attriber£ºCollectionUsageThresholdSupported
+	 ==> Attriber£ºUsageThresholdExceeded
+	 ==> Attriber£ºUsageThresholdSupported
+	 ==> Operation£ºresetPeakUsage
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Connector,ConnectorName=openwire
+Class: org.apache.activemq.broker.jmx.ConnectorView
+	 ==> Attriber£ºStatisticsEnabled
+	 ==> Operation£ºconnectionCount
+	 ==> Operation£ºenableStatistics
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºdisableStatistics
+	 ==> Operation£ºstart
+	 ==> Operation£ºstop
+ ObjectName => org.apache.activemq:BrokerName=localhost,Type=Topic,Destination=ActiveMQ.Advisory.Queue
+Class: org.apache.activemq.broker.jmx.TopicView
+	 ==> Attriber£ºName
+	 ==> Attriber£ºSlowConsumerStrategy
+	 ==> Attriber£ºMemoryPercentUsage
+	 ==> Attriber£ºMemoryLimit
+	 ==> Attriber£ºProducerFlowControl
+	 ==> Attriber£ºAlwaysRetroactive
+	 ==> Attriber£ºBlockedProducerWarningInterval
+	 ==> Attriber£ºMaxProducersToAudit
+	 ==> Attriber£ºMaxAuditDepth
+	 ==> Attriber£ºMaxPageSize
+	 ==> Attriber£ºUseCache
+	 ==> Attriber£ºPrioritizedMessages
+	 ==> Attriber£ºProducerCount
+	 ==> Attriber£ºConsumerCount
+	 ==> Attriber£ºEnqueueCount
+	 ==> Attriber£ºDequeueCount
+	 ==> Attriber£ºDispatchCount
+	 ==> Attriber£ºInFlightCount
+	 ==> Attriber£ºExpiredCount
+	 ==> Attriber£ºQueueSize
+	 ==> Attriber£ºAverageEnqueueTime
+	 ==> Attriber£ºMaxEnqueueTime
+	 ==> Attriber£ºMinEnqueueTime
+	 ==> Attriber£ºMemoryUsagePortion
+	 ==> Attriber£ºSubscriptions
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowse
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºbrowseAsTable
+	 ==> Operation£ºresetStatistics
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºbrowseMessages
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage
+	 ==> Operation£ºsendTextMessage

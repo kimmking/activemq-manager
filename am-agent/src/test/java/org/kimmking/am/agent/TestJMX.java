@@ -1,14 +1,18 @@
 package org.kimmking.am.agent;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
+import javax.management.InstanceNotFoundException;
+import javax.management.IntrospectionException;
 import javax.management.MBeanAttributeInfo;
 import javax.management.MBeanInfo;
 import javax.management.MBeanOperationInfo;
 import javax.management.MBeanServerConnection;
 import javax.management.ObjectInstance;
 import javax.management.ObjectName;
+import javax.management.ReflectionException;
 import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
 import javax.management.remote.JMXServiceURL;
@@ -33,12 +37,20 @@ public class TestJMX {
 		System.out.println("all ObjectName£º---------------");
 		Set<ObjectInstance> set = mbsc.queryMBeans(null, null);
 		for (Iterator<ObjectInstance> it = set.iterator(); it.hasNext();) {
-			ObjectInstance oi = (ObjectInstance) it.next();
-			System.out.println("\t" + oi.getObjectName());
+			ObjectInstance oi = (ObjectInstance) it.next(); 
+			System.out.println(" ObjectName => " + oi.getObjectName());
+			printeObjectName(mbsc,oi.getObjectName());
 		}
 		
-		System.out.println("org.apache.activemq:BrokerName=localhost,Type=Broker£º---------------");
-		ObjectName mbeanName = new ObjectName("org.apache.activemq:BrokerName=localhost,Type=Broker");
+//		System.out.println("org.apache.activemq:BrokerName=localhost,Type=Broker£º---------------");
+//		ObjectName mbeanName = new ObjectName("org.apache.activemq:BrokerName=localhost,Type=Broker");
+		
+		jmxc.close();
+
+	}
+
+	private static void printeObjectName(MBeanServerConnection mbsc, ObjectName mbeanName) throws InstanceNotFoundException, IntrospectionException,
+			ReflectionException, IOException {
 		MBeanInfo info = mbsc.getMBeanInfo(mbeanName);
 		System.out.println("Class: " + info.getClassName());
 		if (info.getAttributes().length > 0){
@@ -49,9 +61,6 @@ public class TestJMX {
 			for(MBeanOperationInfo m : info.getOperations())
 				System.out.println("\t ==> Operation£º" + m.getName());
 		}
-		
-		jmxc.close();
-
 	}
 
 }

@@ -8,6 +8,7 @@
 .project
 .classpath
 
+.git/
 target/
 .settings
 */src/main/java/META-INF/
