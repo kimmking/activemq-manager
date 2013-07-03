@@ -9,10 +9,12 @@ if [ -z "$WORK_VERSION" ]; then
 fi
 
 if [ ! -d "$WORK_PATH" ]; then  
-	mkdir $WORK_PATH  
+	echo "$WORK_PATH does not exist"
+	exit
 fi  
 
 cd $WORK_PATH
 
+echo stop mq...
 cd apache-activemq-$WORK_VERSION
 ./bin/activemq stop

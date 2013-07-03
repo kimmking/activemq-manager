@@ -15,13 +15,16 @@ fi
 cd $WORK_PATH
 
 if [ ! -f "$WORK_PATH/apache-activemq-$WORK_VERSION.zip" ]; then  
+	echo download...
 	wget http://192.168.1.201/apache-activemq-$WORK_VERSION.zip
 	chmod 777 apache-activemq-$WORK_VERSION.zip
 fi 
 if [ ! -d "$WORK_PATH/apache-activemq-$WORK_VERSION" ]; then  
-	unzip apache-activemq-$WORK_VERSION.zip
+	echo unzip...
+	unzip apache-activemq-$WORK_VERSION.zip > unzip.log
 	chmod 777 apache-activemq-$WORK_VERSION -R
 fi 
 
+echo start...
 cd apache-activemq-$WORK_VERSION
 ./bin/activemq start
